@@ -1,6 +1,7 @@
-class Config:
-    MYSQL_HOST = "localhost"
-    MYSQL_USER = "root"
-    MYSQL_PASSWORD = ""
-    MYSQL_DB = "eps_citas"
-    SECRET_KEY = "eps_citas_secret_key_2024"
+import os
+
+MYSQL_HOST = os.getenv("MYSQLHOST")
+MYSQL_USER = os.getenv("MYSQLUSER")
+MYSQL_PASSWORD = os.getenv("MYSQLPASSWORD")
+MYSQL_DB = os.getenv("MYSQLDATABASE")
+MYSQL_PORT = int(os.getenv("MYSQLPORT"))
