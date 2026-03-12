@@ -1,6 +1,6 @@
 import os
 
-class config:
+class Config:
     MYSQL_HOST = os.getenv("MYSQLHOST")
     MYSQL_USER = os.getenv("MYSQLUSER")
     MYSQL_PASSWORD = os.getenv("MYSQLPASSWORD")
