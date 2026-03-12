@@ -1,6 +1,7 @@
 import os
 
 class Config:
+    SECRET_KEY = os.getenv("SECRET_KEY", "clave_secreta_temporal")
     MYSQL_HOST = os.getenv("MYSQLHOST")
     MYSQL_USER = os.getenv("MYSQLUSER")
     MYSQL_PASSWORD = os.getenv("MYSQLPASSWORD")
