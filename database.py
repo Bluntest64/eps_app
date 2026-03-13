@@ -4,6 +4,11 @@ from config import Config
 
 def get_connection():
     try:
+        print("HOST:", Config.MYSQL_HOST)
+        print("USER:", Config.MYSQL_USER)
+        print("DB:", Config.MYSQL_DB)
+        print("PORT:", Config.MYSQL_PORT)
+
         conexion = mysql.connector.connect(
             host=Config.MYSQL_HOST,
             user=Config.MYSQL_USER,
